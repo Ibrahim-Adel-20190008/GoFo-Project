@@ -1,15 +1,27 @@
-
-
-/**
- *
- * @author abdallah mohamed
- */
 public class Player implements User{
     
-        private String name,email,address, phone;
+    /**
+     * to store name of player
+     */
+    private String name;
 
     /**
-     *
+     * to store email of player
+     */
+    private String email;
+
+    /**
+     * to store address of player
+     */
+    private String address; 
+    
+    /**
+     * to store address of player
+     */
+    private String phone;
+
+    /**
+     * parametric constructor
      * @param name
      * @param email
      * @param address
@@ -24,35 +36,49 @@ public class Player implements User{
         }
 
     /**
+     * default constructor
+     */
+    public Player() {
+    }
+    
+    /**
      *
-     * @param name pass the player name
+     * @param player
+     */
+    Player(Player player) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    /**
+     * to assign name of player
+     * @param name
      */
         @Override
     public void setName(String name){
         this.name=name;
         }
 
-        /**
-     *
-     * @param email pass the player email
+    /**
+     * to assign email of player
+     * @param email
      */
         @Override
     public void setEmail(String email){
             this.email=email;
         }
 
-  /**
-     *
-     * @param address pass the player address
+    /**
+     * to assign address of player
+     * @param address
      */
         @Override
     public void setAddress(String address){
             this.address=address;
         }    
 
-     /**
-     *
-     * @param phone pass the player phone number
+    /**
+     * to assign phone of player
+     * @param phone
      */
     @Override
     public void setPhone(String phone) {
@@ -60,9 +86,9 @@ public class Player implements User{
     }
 
 
-     /**
+    /**
      *
-     * @return name
+     * @return the name of player
      */
         @Override
     public String getName(){
@@ -71,7 +97,7 @@ public class Player implements User{
 
     /**
      *
-     * @return email
+     * @return the email of player
      */
         @Override
     public String getEmail(){
@@ -80,16 +106,28 @@ public class Player implements User{
 
     /**
      *
-     * @return address
+     * @return the address of player
      */
         @Override
     public String getAddress(){
             return address;
-        }    
+        }
 
     /**
+     * This function book the playground 
+     * @param startTime
+     * @param numOfhours
+     * @param Person
+     * @param indexOfPlayground
+     */
+    public void Booking(int startTime,int numOfhours,playgroundOwner Person,int indexOfPlayground)
+    {
+        System.out.println("pending...");
+        Person.Booking(startTime, numOfhours, indexOfPlayground);
+    }
+    /**
      *
-     * @return phone
+     * @return the phone number of player
      */
         @Override
     public String getPhone(){
@@ -98,7 +136,7 @@ public class Player implements User{
 
     /**
      *
-     * @return
+     * @return all data for player
      */
     @Override
         public String toString() {
