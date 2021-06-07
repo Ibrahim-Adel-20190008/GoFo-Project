@@ -42,15 +42,6 @@ public class Playground {
     public void setSize(int size) {
         this.price = price;
     }
-/**
-     *
-     * @return all values
-     */
-    @Override
-    public String toString() {
-        
-        return " Your playground{" + "name=" + name + ", price=" + price + " Available hours=" + '[';
-    }
     /**
      *
      * display all values
