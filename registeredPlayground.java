@@ -1,7 +1,3 @@
-/**
- *
- * @author abdallah mohamed
- */
 
 import java.util.ArrayList;
 
@@ -27,11 +23,19 @@ public class registeredPlayground {
 
     /**
      * add new playground in ArrayList
-     * @param player
+     * @param playground
      */
     public void addNewPlayground(Playground playground )
     {
         Playgrounds.add(playground);
     }
-    
+
+    /**
+     *To display all Playgrounds data
+     */
+    public void viewingPlayground()
+    {
+        for(int i=0 ;i<Playgrounds.size() ;i++)
+           System.out.println(Playgrounds.get(i).display()); 
+    }
 }
