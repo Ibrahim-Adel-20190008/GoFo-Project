@@ -48,10 +48,10 @@ public class Playground {
      */
     
     public String display(){
-         String s=" Your playground{" + "name=" + name + ", price=" + price + " Available hours=" + '[';
+         String s=" Your playground{" + "name=" + name + ", price=" + price + ", Available hours=" + '[';
         for(int i=0 ;i<11 ;i++)
            s+=hours[i]+",";
-        s+=hours[11]+"]";
+        s+=hours[11]+"]}";
          return s;
     }
     
